@@ -41,6 +41,9 @@ build/Release
 node_modules/
 jspm_packages/
 
+# Reports
+allure-results/
+
 # TypeScript v1 declaration files
 typings/
 
