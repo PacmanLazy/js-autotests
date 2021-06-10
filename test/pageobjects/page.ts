@@ -16,6 +16,6 @@ export default class Page {
     * @param path path of the sub page (e.g. /path/to/page.html)
     */
     open (path: string) {
-        return this.browser.goToUrl(`https://the-internet.herokuapp.com/${path}`)
+        return this.browser.goToUrl(path);
     }
 }

@@ -1,0 +1,34 @@
+[
+    {
+        "validationDescription": "Average value",
+        "value": "a"
+    },
+    {
+        "validationDescription": "Minimum value",
+        "value": "abc"
+    },
+    {
+        "validationDescription": "Maximum values",
+        "value": "qNFLoWIxCSRorPKRryGwDYqziNiCyK"
+    },
+    {
+        "validationDescription": "More than maximum values",
+        "value": "qNFLoWIxCSRorPKRryGwDYqziNiCyKb"
+    },
+    {
+        "validationDescription": "Basic Sql injection",
+        "value": "'sql'"
+    },
+    {
+        "validationDescription": "You used html tags",
+        "value": "<h1>text</h1>"
+    },
+    {
+        "validationDescription": "Space in the middle",
+        "value": "tWsi slf"
+    },
+    {
+        "validationDescription": "Other chars then alphabetic",
+        "value": "aa5a&@dkfdk"
+    }
+]

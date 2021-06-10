@@ -1,9 +1,9 @@
 import ElementInterface from "../interfaces/element";
 
 export default class WDIOElementAdapter implements ElementInterface {
-    private _element: Promise<WebdriverIO.Element>;
+    private _element: Promise<WebdriverIO.Element> | WebdriverIO.Element;
 
-    constructor(element: Promise<WebdriverIO.Element>) {
+    constructor(element: Promise<WebdriverIO.Element> | WebdriverIO.Element) {
         this._element = element;
     }
 
