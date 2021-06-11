@@ -8,7 +8,7 @@ export default class WDIOElementAdapter implements ElementInterface {
     }
 
     async elementText() : Promise<string> {
-        return await (await this._element).getText();
+        return (await this._element).getText();
     }
 
     async setValue(value: string | number) {
@@ -20,6 +20,6 @@ export default class WDIOElementAdapter implements ElementInterface {
     }
 
     async exists() : Promise<boolean> {
-        return await (await this._element).isExisting();
+        return (await this._element).isExisting();
     }
 }
