@@ -1,4 +1,4 @@
-import { urls } from "../config.url";
+import { urls } from "../../test/config.url";
 import LoginPage from "../pageobjects/example/login.page";
 import forumEnrollPage from "../pageobjects/testing-challenges/forum.enroll.page";
 

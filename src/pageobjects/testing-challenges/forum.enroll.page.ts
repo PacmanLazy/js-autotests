@@ -1,4 +1,4 @@
-import { urls } from "../../config.url";
+import { urls } from "../../../test/config.url";
 import Page from "../page";
 
 class ForumEnrollPage extends Page {

@@ -1,0 +1,6 @@
+{
+    "email": "john.doe@mail.com",
+    "name": "John Doe",
+    "tasks": [56],
+    "companies": [7, 8]
+}
