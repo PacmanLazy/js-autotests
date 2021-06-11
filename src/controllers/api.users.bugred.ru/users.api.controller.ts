@@ -2,6 +2,7 @@ import { urls } from "../../../test/config.url";
 import UsersApiResponse from "../../models/users.api.response";
 import existingUser from "../../../test/data-providers/existing-user.json";
 import UsersApiResponseBody from "../../models/users.api.response.body";
+import fetch from 'node-fetch';
 
 export default class UsersApiController {
     static async createUserExists() : Promise<UsersApiResponse> {
