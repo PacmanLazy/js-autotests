@@ -1,4 +1,4 @@
-import ExampleLoginController from '../../src/controllers/example.login.controller';
+import ExampleLoginController from '../../../src/controllers/example.login.controller';
 
 describe('My Login application', () => {
     it('should login with valid credentials', async () => {

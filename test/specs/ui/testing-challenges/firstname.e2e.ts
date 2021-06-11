@@ -1,6 +1,6 @@
-import ForumEnrollController from "../../../src/controllers/testing-challenges/forum.enroll.controller";
-import firstNameValidations from "../../data-providers/first-name.json";
-import FormFieldValidation from "../../../src/interfaces/form.field.validation";
+import ForumEnrollController from "../../../../src/controllers/testing-challenges/forum.enroll.controller";
+import firstNameValidations from "../../../data-providers/first-name.json";
+import FormFieldValidation from "../../../../src/interfaces/form.field.validation";
 
 describe('Testing challenge one', () => {
     const validations: FormFieldValidation[] = firstNameValidations as FormFieldValidation[];
