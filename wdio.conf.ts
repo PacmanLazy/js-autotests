@@ -230,9 +230,9 @@ export const config: WebdriverIO.Config = {
     /**
      * Function to be executed after a test (in Mocha/Jasmine).
      */
-    afterTest: function(test, context, { error, result, duration, passed, retries }) {
+    afterTest: async function(test, context, { error, result, duration, passed, retries }) {
         if (!passed) {
-            browser.takeScreenshot();
+            await browser.takeScreenshot();
         }
     },
 
@@ -278,6 +278,7 @@ export const config: WebdriverIO.Config = {
      * @param {<Object>} results object containing test results
      */
     // onComplete: function(exitCode, config, capabilities, results) {
+        
     // },
     /**
     * Gets executed when a refresh happens.
