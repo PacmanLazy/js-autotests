@@ -27,7 +27,7 @@
     "wdio-chromedriver-service": "^7.1.0"
   },
   "scripts": {
-    "test": "npx wdio run wdio.conf.ts && npx jasmine-ts --config=jasmine.json"
+    "test": "npx wdio run wdio.conf.ts && npx jasmine-ts --reporter=jasmine-allure-reporter --config=jasmine.json"
   },
   "repository": {
     "type": "git",

@@ -1,7 +1,7 @@
 {
   "reporters": [
     {
-      "name": "jasmine-spec-reporter#AllureReporter",
+      "name": "jasmine-allure-reporter",
       "options": {
         "displayStacktrace": "all"
       }
