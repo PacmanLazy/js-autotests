@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@wdio/cli": "^7.7.3",
+    "ajv": "^8.6.0",
     "node-fetch": "^2.6.1",
     "ts-node": "^10.0.0",
     "typescript": "^4.3.2"
