@@ -2,19 +2,20 @@ import ElementInterface from "../../interfaces/element";
 import FormFieldValidation from "../../interfaces/form.field.validation";
 import forumEnrollPage from "../../pageobjects/testing-challenges/forum.enroll.page";
 import NavigationController from "../navigation.controller";
+import ArrayUtils from "../../utils/arrays";
 
 export default class ForumEnrollController {
     static async firstNameFieldHasValidation(formFieldValidation: FormFieldValidation) : Promise<boolean> {
         await NavigationController.openForumEnrollPage();
         await forumEnrollPage.submitFormWithValue(formFieldValidation.value);
         const validationOutputList: ElementInterface[] = await forumEnrollPage.getValidationsOutputList();
-        return this.validationOutputContains(validationOutputList, formFieldValidation.validationDescription);
-
+        
+        return await this.validationOutputContains(validationOutputList, formFieldValidation.validationDescription);
     }
 
-    private static validationOutputContains(validationsOutput: ElementInterface[], value: string): boolean {
-        return validationsOutput.findIndex(async v => { 
-            return (await v.elementText()).localeCompare(value)
+    private static async validationOutputContains(validationsOutput: ElementInterface[], value: string): Promise<boolean> {
+        return await ArrayUtils.aFindIndex(validationsOutput, async v => { 
+            return (await v.elementText()).localeCompare(value) == 0;
         }) >= 0;
     }
 }

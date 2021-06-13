@@ -1,11 +1,11 @@
 [
     {
         "validationDescription": "Average value",
-        "value": "a"
+        "value": "abc"
     },
     {
         "validationDescription": "Minimum value",
-        "value": "abc"
+        "value": "a"
     },
     {
         "validationDescription": "Maximum values",
